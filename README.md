@@ -2,10 +2,10 @@
 Makers Academy Week 1 project
 
 ## User Story ##
-story 1:  person, bike, docking station
+**story 1**:  person, bike, docking station
           use, release a bike
-          
-story 2:  person, bike
+
+**story 2**:  person, bike
           use, see if bike is working
 
 
