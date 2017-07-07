@@ -7,11 +7,11 @@ describe DockingStation do
   it "releases working bikes" do
     bike = Bike.new
     subject.dock(bike)
-    bike = subject.release_bike ## here
+    bike = subject.release_bike
     expect(bike).to be_working
   end
 
-  it { is_expected.to respond_to(:dock).with(1).argument }  #here
+  it { is_expected.to respond_to(:dock).with(1).argument }
 
   it 'docks something' do
     bike = Bike.new
@@ -30,13 +30,6 @@ describe DockingStation do
     end
   end
 
-=begin
-  it 'returns docked bikes' do
-    bike = Bike.new
-    subject.dock(bike)
-    expect(subject.dock(bike)).to eq bike
-  end
-=end
 
   describe "#dock" do
     it "raises an error when full" do
@@ -66,7 +59,5 @@ describe DockingStation do
       expect{ subject.dock(bike) }.to raise_error "Docking station is full"
     end
   end
-
-
 
 end
