@@ -1,5 +1,12 @@
 class Bike
 
+  # I dont like the broken? method. I prefare attr_reader
+  # attr_reader :broken
+  #
+  # def initialize
+  #   @broken = broken
+  # end
+
   def working?
     true
   end
